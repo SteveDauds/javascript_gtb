@@ -57,8 +57,10 @@ let sentenceFuncCall = func(sentence);
 if(sentenceFuncCall.status){
   let largestSentenceWord = sentenceFuncCall.value.largestWord;
   let largestSentenceWordIndex = sentenceFuncCall.value.index;
-  console.log(`The largest word in the sentence is ${largestSentenceWord}, and the start index is ${largestSentenceWordIndex}`)
+  let finalAnswer = `The largest word in the sentence is ${largestSentenceWord}, and the start index is ${largestSentenceWordIndex}`;
+  console.log(finalAnswer);
+  alert(finalAnswer);
 }
 else{
-  console.log(sentenceFuncCall.message);
+  alert(sentenceFuncCall.message);
 }
